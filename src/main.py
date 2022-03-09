@@ -1,3 +1,4 @@
+from generator import create_planets
 from resources import  Planet, Moons
 
 def main():
@@ -25,6 +26,14 @@ def main():
     tellus.print_moons()
     mars.print_moons()
     jupiter.print_moons()
+
+    mars.certain_size(1000)
+    print()
+
+    i =create_planets()
+    print(i.get_name())
+    print(i.get_size())
+    i.print_moons()
 
 if __name__ == "__main__":
     main()

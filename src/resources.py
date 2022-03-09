@@ -22,6 +22,12 @@ class Planet:
         for moon in self.moons:
             print(moon.get_name())
 
+    def certain_size(self, size : int):
+        print(f"The folllowing moons around{self.get_name()} larger than {size} sqkm")
+        for moon in self.moons:
+            if moon.get_size() > size:
+                print(moon.get_name()) 
+
 class Moons:
     def __init__(self, name : str, size : int):
         self.name = name
