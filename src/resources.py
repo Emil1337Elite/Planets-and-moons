@@ -1,6 +1,6 @@
 
 class Planet:
-    def __init__(self, name, size):
+    def __init__(self, name : str, size : int):
         self.name = name
         self.size = size
         self.moons = []
@@ -23,7 +23,7 @@ class Planet:
             print(moon.get_name())
 
 class Moons:
-    def __init__(self, name, size):
+    def __init__(self, name : str, size : int):
         self.name = name
         self.size = size
         self.orbits = None
